@@ -33,6 +33,8 @@ public class MyExceptionHandler {
         map.put("code", "user.noexist");
         map.put("message", "用户出错啦");
 
+        request.setAttribute("ext", map);
+
         return "forward:/error";
     }
 }

@@ -2,6 +2,10 @@ package com.yws.config;
 
 import com.yws.component.LoginHandlerInterceptor;
 import com.yws.component.MyLocaleResolver;
+import org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration;
+import org.springframework.boot.web.server.ConfigurableWebServerFactory;
+import org.springframework.boot.web.server.WebServerFactory;
+import org.springframework.boot.web.server.WebServerFactoryCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.LocaleResolver;
@@ -12,8 +16,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 //可以来扩展SpringMVC的功能
 @Configuration
-//@EnableWebMvc
+//@EnableWebMvc//全面接管springMVC，所有组件自己配置
 public class MyMvcConfig implements WebMvcConfigurer {
+
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         //浏览器发送/yws请求来到success
