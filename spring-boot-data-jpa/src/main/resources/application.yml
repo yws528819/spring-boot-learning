@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/jpa?serverTimezone=GMT%2B8
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      #\u66F4\u65B0\u6216\u8005\u521B\u5EFA\u6570\u636E\u8868\u7ED3\u6784
+      ddl-auto: update
+    #\u63A7\u5236\u53F0\u663E\u793Asql
+    show-sql: true
