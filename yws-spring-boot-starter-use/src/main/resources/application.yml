@@ -1,0 +1,4 @@
+yws:
+  hello:
+    prefix: "hi,"
+    suffix: "!!!"
