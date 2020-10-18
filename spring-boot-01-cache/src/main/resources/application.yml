@@ -5,6 +5,8 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/spring_cache?serverTimezone=GMT%2B8
     username: root
     password: root
+  redis:
+    host: 192.168.78.128
 #    initialization-mode: always
 #    type: com.alibaba.druid.pool.DruidDataSource
 
@@ -20,4 +22,4 @@ logging:
         mapper:
           debug
 
-debug: true
+#debug: true
