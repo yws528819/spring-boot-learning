@@ -1,0 +1,10 @@
+#\u6211\u662F\u672C\u5730\uFF0C\u4E0E\u9ED8\u8BA4\u4E00\u81F4\u4E0D\u518D\u91CD\u590D
+##spring:
+##  elasticsearch:
+##    jest:
+##      uris: http://localhost:9200
+spring:
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: localhost:9300
